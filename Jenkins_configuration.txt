@@ -1,0 +1,64 @@
+####################All Jenkins configuration details###############
+##Sonarqube token ids for jenkins communication
+Jenkins - 074b7e333ce10bccc12c14c7372d2a3c449d1622
+Jenkins1 - 4617b92e67227468c88274d8725de1008eb302d2
+
+########################## Plugins:
+Ansible plugin
+Build Pipeline Plugin
+Email Extension Plugin
+Environment Injector
+GitHub Authentication plugin
+GitHub Integration Plugin
+LDAP Plugin
+Locale plugin
+Maven Integration plugin
+NodeJS Plugin
+Pipeline Maven Integration Plugin
+Publish Over SSH
+Sonar Quality Gates Plugin
+SonarQube Scanner for Jenkins
+SSH plugin
+SSH Agent Plugin
+SSH Credentials Plugin
+SVN 1.3 Compatibility Plugin
+SVN 1.4 Compatibility Plugin
+Timestamper
+WMI Windows Agents Plugin
+Workspace Cleanup Plugin
+
+########################## /configure:
+Jenkins Location
+http://192.168.242.252:8080/
+SonarQube servers
+SonarQube_Server
+http://192.168.242.253:9000/
+SSH remote hosts
+192.168.242.253
+22
+172.105.35.222
+22
+Quality Gates - Sonarqube
+SonarQube_Gate
+http://192.168.242.253:9000
+074b7e333ce10bccc12c14c7372d2a3c449d1622
+admin
+Sonarqube@123
+E-mail Notification
+smtp.gmail.com
+raviib002@gmail.com
+465
+
+##################### /configureTools/:
+SonarQube Scanner
+SonarQube_Scanner
+/opt/sonar-scanner-4.5
+Maven
+maven-3.5.4
+/usr/local/src/apache-maven-3.5.4
+
+####################### Credentials:
+	9d2750f0-b3c5-4cd2-9eb6-d0d2a5d2e2db	JenkinsSonarQube	Secret text	JenkinsSonarQube
+		root/****** (Deployment_srv(root))	Username with password	Deployment_srv(root)
+		root/****** (SonarServer_root(SSH))	Username with password	SonarServer_root(SSH)
+		raveendra/****** (ADS_Raveendra)	Username with password	ADS_Raveendra
